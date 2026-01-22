@@ -459,7 +459,7 @@ body{
 }
 
 .loader-logo{
-  width: 130px;
+  width: 300px;
   height: auto;
   opacity: .95;
   animation: glowPulse 1.8s ease-in-out infinite;
