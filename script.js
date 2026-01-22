@@ -47,3 +47,14 @@ const io = new IntersectionObserver(
 );
 
 animatedEls.forEach((el) => io.observe(el));
+
+// ------------------
+// Loader
+// ------------------
+const loader = document.getElementById("loader");
+
+// Ensure loader stays until everything (images/fonts) is loaded
+window.addEventListener("load", () => {
+  loader.classList.add("hide");
+});
+
