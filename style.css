@@ -443,3 +443,58 @@ body{
 
   .rule{ margin: 28px 0; }
 }
+
+/* ----------------------------
+   Loader (Glowing Logo)
+----------------------------- */
+.loader{
+  position: fixed;
+  inset: 0;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  transition: opacity 700ms ease, visibility 700ms ease;
+}
+
+.loader-logo{
+  width: 130px;
+  height: auto;
+  opacity: .95;
+  animation: glowPulse 1.8s ease-in-out infinite;
+  filter: drop-shadow(0 0 12px rgba(255,255,255,.35))
+          drop-shadow(0 0 28px rgba(255,255,255,.22))
+          drop-shadow(0 0 50px rgba(255,255,255,.12));
+}
+
+/* Glow animation */
+@keyframes glowPulse{
+  0%, 100%{
+    transform: scale(1);
+    opacity: .85;
+    filter: drop-shadow(0 0 10px rgba(255,255,255,.30))
+            drop-shadow(0 0 24px rgba(255,255,255,.20))
+            drop-shadow(0 0 48px rgba(255,255,255,.10));
+  }
+  50%{
+    transform: scale(1.03);
+    opacity: 1;
+    filter: drop-shadow(0 0 14px rgba(255,255,255,.45))
+            drop-shadow(0 0 34px rgba(255,255,255,.28))
+            drop-shadow(0 0 70px rgba(255,255,255,.14));
+  }
+}
+
+/* Fade out */
+.loader.hide{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .loader-logo{ animation: none; }
+}
+
