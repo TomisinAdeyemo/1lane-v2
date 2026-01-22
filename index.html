@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>1LaNe Co</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Background glow -->
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav-wrap anim anim--fadeblur">
+    <nav class="nav">
+      <a class="brand" href="#">
+        <!-- Replace with your logo image -->
+        <img src="./1lane chrome.png" alt="1LaNe" class="brand-logo" />
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">ABOUT</a>
+        <a href="#businesses">OUR BUSINESSES</a>
+        <a href="support@1laneco.com">CONTACT</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">ABOUT</a>
+      <a href="#businesses">OUR BUSINESSES</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="container">
+    <section class="hero">
+      <h1 class="hero-title anim anim--fadeblur" data-delay="1">
+        WE BUILD INDEPENDENT<br/>
+        BUSINESSES THAT SHAPE<br/>
+        MUSIC, CULTURE, AND<br/>
+        SPORT.
+      </h1>
+    </section>
+
+    <div class="rule anim anim--line" data-delay="2"></div>
+
+    <!-- WHO WE ARE -->
+    <section class="who" id="about">
+      <div class="who-inner">
+        <h2 class="who-title anim anim--fadeblur" data-delay="1">WHO WE ARE?</h2>
+        <p class="who-text anim anim--fadeblur" data-delay="2">
+          1LaNe Companies Is The Parent Company Behind A Growing Portfolio Of
+          Independent Businesses Operating Across Music, Culture, And Sport.
+          Each Company Is Built To Operate Autonomously While Benefiting From
+          Shared Vision, Strategy, And Execution At The Group Level.
+        </p>
+      </div>
+    </section>
+
+    <div class="rule anim anim--line" data-delay="2"></div>
+
+    <!-- OUR BUSINESSES -->
+    <section class="biz" id="businesses">
+      <h2 class="section-title anim anim--fadeblur" data-delay="1">OUR BUSINESSES</h2>
+
+      <!-- Business 1 -->
+      <article class="biz-row biz-row--left">
+        <div class="biz-media anim anim--fadeblur" data-delay="1">
+          <img src="./1lane chrome.png" alt="1LaNe" />
+        </div>
+
+        <div class="biz-copy biz-copy--left">
+          <h3 class="biz-name anim anim--fadeblur" data-delay="2">1LaNe</h3>
+          <p class="biz-desc anim anim--fadeblur" data-delay="3">
+            1LaNe Is A Music Company Focused On Distribution, Publishing, And Artist Services.
+            Building Infrastructure That Enables Artists To Own Their Growth And Reach Global Audiences.
+          </p>
+
+          <p class="biz-linkline anim anim--fadeblur" data-delay="4">
+            EXPLORE HOW WE HELP ARTISTS DISTRIBUTE AND GROW — ALL IN 1 PLACE
+            <a class="inline-link" href="#" target="_blank" rel="noopener">HERE</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- Business 2 -->
+      <article class="biz-row biz-row--right">
+        <div class="biz-media anim anim--fadeblur" data-delay="1">
+          <img src="./chrome wornlane.png" alt="wornlane" />
+        </div>
+
+        <div class="biz-copy biz-copy--right">
+          <h3 class="biz-name anim anim--fadeblur" data-delay="2">wornlane</h3>
+          <p class="biz-desc anim anim--fadeblur" data-delay="3">
+            Wornlane Is A Performance-Driven Sportswear Brand Creating Kits And
+            Apparel For Teams And Athletes Who Compete To Win.
+          </p>
+
+          <a class="btn anim anim--fadeblur" data-delay="4" href="#" target="_blank" rel="noopener">
+            Visit Wornlane
+          </a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-brand anim anim--fadeblur" data-delay="1">
+        <img src="./1lane chrome.png" alt="1LaNe" />
+      </div>
+
+      <div class="footer-links anim anim--fadeblur" data-delay="2">
+        <p class="footer-title">Company</p>
+        <a href="#about">About</a>
+        <a href="#businesses">Our Businesses</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
